@@ -15,16 +15,16 @@ document.getElementById('generate').addEventListener('click', event => {
   let generatedUsername = ''
 
 
-  if (hasLowercase === 'yes') {
+  if (hasLowercase) {
       charSet += lowercase
   }
-  if (hasUppercase === 'yes') {
+  if (hasUppercase) {
       charSet += uppercase
   }
-  if (hasNumeric === 'yes') {
+  if (hasNumeric) {
       charSet += numbers
-  } === yes
-  if (hasSpecialChar === 'yes') {
+  }
+  if (hasSpecialChar) {
       charSet += symbols
   }
 
