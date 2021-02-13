@@ -13,3 +13,22 @@ document.getElementById('generate').addEventListener('click', event => {
   let numbers = '1234567890'
   let symbols = '!@#$%&*'
 
+  if (hasLowercase) {
+      charSet += lowercase
+  }
+  if (hasUppercase) {
+      charSet += uppercase
+  }
+  if (hasNumeric) {
+      charSet += numbers
+  }
+  if (hasSpecialChar) {
+      charSet += symbols
+  }
+
+  for (let i = 0; i < hasLength; i++) {
+    charSet[Math.floor(Math.random() * charSet.length)]
+  }
+  
+  
+})
